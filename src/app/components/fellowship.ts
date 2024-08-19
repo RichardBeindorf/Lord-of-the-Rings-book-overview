@@ -20,10 +20,10 @@ import { Component } from "@angular/core";
         <p>Book II</p>
         <h3>The Ring Goes South</h3>
         </div>
-        <img src="../../assets/Fellow.jpg"/>    
+        <img src="../../assets/Fellow.jpg"/>
     </section>
 
-    <a><span>Next Vokume</span></a>
+    <a><span>Next Vokume <br> The Two Towers</span></a>
   </main>
     `,
 	styleUrls: ["./app.component.css"],
