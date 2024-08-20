@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 
 @Component({
-	selector: "app-root",
+	selector: "fellowship",
 	template: `
   <main>
     <a><span>All Vokumes</span></a>
@@ -26,8 +26,8 @@ import { Component } from "@angular/core";
     <a><span>Next Vokume <br> The Two Towers</span></a>
   </main>
     `,
-	styleUrls: ["./app.component.css"],
+	styleUrls: ["./details.styles.css"],
 })
-export class AppComponent {
+export class Fellow {
 	title = "The Fellowship";
 }
