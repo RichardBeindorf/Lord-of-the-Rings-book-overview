@@ -1,11 +1,10 @@
 import { Component } from "@angular/core";
 
 @Component({
-	selector: "fellowship",
+	selector: "app-fellowship",
 	template: `
   <main>
-    <a><span>All Vokumes</span></a>
-
+    <a routerLink="/" routerLinkActive="active"><span class="italcs">All Volumes</span></a>
     <section>
         <h1>The Lord of the Rings <br> Fanpage</h1>
         <p>The Fellowship of the Ring is the first volume of J. R. R. Tolkiens epic advanture The Lord of the Ring. It is followed by The Two Towers and The Return of the King.</p>
@@ -20,10 +19,19 @@ import { Component } from "@angular/core";
         <p>Book II</p>
         <h3>The Ring Goes South</h3>
         </div>
-        <img src="../../assets/Fellow.jpg"/>
+        <img src="assets/Fellow.jpg" height="140" width="90"/>
     </section>
 
-    <a><span>Next Vokume <br> The Two Towers</span></a>
+    <div class="button">
+      <a routerLink="/details/return" routerLinkActive="active">
+        <span class="italcs">Next Volume</span> <br> <span>The Return of the King</span>
+      </a>
+    </div>
+    <div class="button">
+      <a routerLink="/details/fellowship" routerLinkActive="active">
+        <br><span class="italcs">Previous Volume</span> <br> <span>The Fellowship of the Ring</span>
+      </a>
+    </div>
   </main>
     `,
 	styleUrls: ["./details.styles.css"],

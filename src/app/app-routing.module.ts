@@ -1,14 +1,25 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { Fellow } from "./components/fellowship";
-import { Towers } from "./components/towers";
-import { Return } from "./components/return";
+import { Fellow } from "./details/fellowship";
+import { Towers } from "./details/towers";
+import { Return } from "./details/return";
+import { Home } from "./main/home";
+import { DetailsLayoutComponent } from "./details/details-layout.component";
 
 const routes: Routes = [
-	{ path: "", redirectTo: "/home", pathMatch: "full" },
-	{ path: "./components/fellowship", component: Fellow },
-	{ path: "./components/tower", component: Towers },
-	{ path: "./components/return", component: Return },
+	{
+		path: "",
+		component: Home,
+	},
+	{
+		path: "details",
+		component: DetailsLayoutComponent,
+		children: [
+			{ path: "fellowship", component: Fellow },
+			{ path: "towers", component: Towers },
+			{ path: "return", component: Return },
+		],
+	},
 ];
 
 @NgModule({

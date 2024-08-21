@@ -1,0 +1,18 @@
+body{
+    background-color: var(--color-earth);
+}
+
+.italcs{
+    font: var(--font-caption--italic);
+    color: var(--color-smoke);
+    text-decoration-style: none !important;
+}
+
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none; 
+  color: var(--color-smoke);
+}

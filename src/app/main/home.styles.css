@@ -1,0 +1,23 @@
+body{
+    background-color: var(--color-earth);
+}
+
+picture{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+span{
+    font-size: 9pt;
+}
+
+.book-title{
+    margin: 0px;
+    text-align: start;
+    font-weight: 500;
+    padding-left: 3px;
+    padding-right: 5px;
+    max-width: 85px;
+}
