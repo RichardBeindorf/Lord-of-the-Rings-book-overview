@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
     /* Color styles */
-    --color-earth: #282828;
+    --color-earth: #1e1f1e;
     --color-clouds: #f1f1f1;
     --color-smoke: #d4d1cd;
   
@@ -36,8 +36,9 @@
     font: var(--font-body);
     color: var(--color-smoke);
     background-color: var(--color-earth);
-    padding-left: 20px;
-    padding-right: 10px;
+    /* padding-left: 20px; */
+    /* padding-right: 10px; */
+    margin: 0;
   }
 
   h1{
@@ -46,4 +47,12 @@
 
   h2{
     font: var(--font-headline-2)
+  }
+
+  img{
+    box-shadow: var(--box-shadow-book)
+  }
+
+  img:hover{
+    box-shadow: var(--box-shadow-book--hover);
   }

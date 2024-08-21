@@ -1,5 +1,13 @@
+.main > * {
+  margin: 10px 32px;
+}
+
 body{
     background-color: var(--color-earth);
+}
+
+.down{
+  margin-top: 30px !important;
 }
 
 .italcs{
@@ -8,6 +16,130 @@ body{
     text-decoration-style: none !important;
 }
 
+main{
+  position: relative;
+}
+
+.BookDetails{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  padding: 5px 50px 10px 27px;
+  margin: 0 0px !important;
+}
+
+.one{
+  background-image: linear-gradient(
+    90deg,
+    hsl(157deg 64% 5%) 33%,
+    hsl(157deg 48% 7%) 63%,
+    hsl(156deg 38% 8%) 75%,
+    hsl(156deg 35% 9%) 83%,
+    hsl(156deg 33% 10%) 88%,
+    hsl(156deg 32% 11%) 92%,
+    hsl(156deg 31% 12%) 95%,
+    hsl(156deg 30% 13%) 97%,
+    hsl(156deg 29% 14%) 98%,
+    hsl(156deg 29% 15%) 100%,
+    hsl(156deg 28% 16%) 100%,
+    hsl(157deg 28% 17%) 101%,
+    hsl(157deg 27% 18%) 101%,
+    hsl(157deg 27% 19%) 102%,
+    hsl(157deg 26% 20%) 102%,
+    hsl(157deg 26% 21%) 102%,
+    hsl(157deg 26% 22%) 101%,
+    hsl(157deg 25% 23%) 101%,
+    hsl(157deg 25% 24%) 101%,
+    hsl(157deg 25% 25%) 101%,
+    hsl(157deg 25% 26%) 100%,
+    hsl(157deg 24% 27%) 100%
+  );
+}
+
+.two{
+  background-image: linear-gradient(
+  90deg,
+  hsl(13deg 79% 6%) 33%,
+  hsl(16deg 54% 8%) 63%,
+  hsl(15deg 41% 10%) 75%,
+  hsl(13deg 36% 11%) 83%,
+  hsl(14deg 34% 13%) 88%,
+  hsl(14deg 33% 15%) 92%,
+  hsl(15deg 32% 17%) 95%,
+  hsl(15deg 32% 18%) 97%,
+  hsl(16deg 31% 20%) 98%,
+  hsl(16deg 31% 22%) 100%,
+  hsl(17deg 30% 24%) 100%,
+  hsl(17deg 30% 26%) 101%,
+  hsl(17deg 30% 28%) 101%,
+  hsl(18deg 30% 30%) 102%,
+  hsl(18deg 29% 31%) 102%,
+  hsl(18deg 29% 33%) 102%,
+  hsl(18deg 29% 35%) 101%,
+  hsl(18deg 29% 37%) 101%,
+  hsl(19deg 29% 39%) 101%,
+  hsl(19deg 29% 41%) 101%,
+  hsl(19deg 29% 43%) 100%,
+  hsl(19deg 28% 45%) 100%
+);
+}
+
+.three{
+  background-image: linear-gradient(
+  90deg,
+  hsl(222deg 79% 6%) 33%,
+  hsl(216deg 55% 8%) 63%,
+  hsl(213deg 45% 10%) 75%,
+  hsl(211deg 42% 11%) 83%,
+  hsl(209deg 40% 13%) 88%,
+  hsl(207deg 38% 15%) 92%,
+  hsl(205deg 36% 17%) 95%,
+  hsl(204deg 35% 18%) 97%,
+  hsl(202deg 34% 20%) 98%,
+  hsl(201deg 33% 22%) 100%,
+  hsl(200deg 32% 24%) 100%,
+  hsl(199deg 32% 26%) 101%,
+  hsl(198deg 31% 28%) 101%,
+  hsl(197deg 31% 29%) 102%,
+  hsl(196deg 30% 31%) 102%,
+  hsl(196deg 30% 33%) 102%,
+  hsl(195deg 30% 35%) 101%,
+  hsl(194deg 29% 37%) 101%,
+  hsl(193deg 29% 39%) 101%,
+  hsl(193deg 29% 41%) 101%,
+  hsl(192deg 29% 43%) 100%,
+  hsl(192deg 28% 45%) 100%
+);
+}
+
+.chapter-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.chapters{
+  font-size: small;
+}
+
+
+.button-container{
+  margin-top: 30px !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.next{
+display: flex;
+justify-content: flex-end;
+}
+
+.previous{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
 
 a:link,
 a:visited,
