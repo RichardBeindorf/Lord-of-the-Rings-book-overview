@@ -1,10 +1,13 @@
 import { Component } from "@angular/core";
+import { SvgComponent } from "./svg.component";
+import { ArrowLeft } from "src/assets/svg.arrow-component-left";
 
 @Component({
 	selector: "app-fellowship",
 	template: `
   <main class="main">
     <div class="down">
+    <app-svg></app-svg>
     <a routerLink="/" routerLinkActive="active"><span  class="italcs">All Volumes</span></a>
     </div>
     <section>
@@ -31,8 +34,10 @@ import { Component } from "@angular/core";
           <a routerLink="/details/towers" routerLinkActive="active">
             <span class="italcs">Next Volume</span> <br> <span>The Two Towers</span>
           </a>
+          <new-arrow></new-arrow>
         </div>
         <div class="button previous">
+          <app-arrow-left></app-arrow-left>
           <a routerLink="/details/fellowship" routerLinkActive="active">
             <br><span class="italcs">Previous Volume</span> <br> <span>The Fellowship of the Ring</span>
           </a>

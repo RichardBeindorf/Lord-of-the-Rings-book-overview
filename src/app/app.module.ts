@@ -8,6 +8,9 @@ import { Home } from "./main/home";
 import { Fellow } from "./details/fellowship";
 import { Return } from "./details/return";
 import { Towers } from "./details/towers";
+import { SvgComponent } from "./details/svg.component";
+import { ArrowLeft } from "../assets/svg.arrow-component-left";
+import { ArrowRight } from "../assets/svg.arrow-component-right";
 
 @NgModule({
 	declarations: [
@@ -18,7 +21,14 @@ import { Towers } from "./details/towers";
 		Return,
 		Towers,
 	],
-	imports: [BrowserModule, AppRoutingModule, RouterModule],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		RouterModule,
+		SvgComponent,
+		ArrowLeft,
+		ArrowRight,
+	],
 	providers: [],
 	bootstrap: [AppComponent],
 })
